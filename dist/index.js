@@ -3,7 +3,7 @@
  * description: Check whether a value is empty.
  * homepage: https://github.com/afeiship/next-is-empty
  * version: 1.0.0
- * date: 2021-02-06 10:01:17
+ * date: 2021-02-06 10:30:31
  * license: MIT
  */
 

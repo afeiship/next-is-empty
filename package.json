@@ -36,5 +36,14 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "keywords": [
+    "next",
+    "is-empty",
+    "object",
+    "array",
+    "map",
+    "string",
+    "lodash"
+  ]
 }
