@@ -1,10 +1,19 @@
-(function() {
-  var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('next-js-core2');
+/*!
+ * name: @jswork/next-is-empty
+ * description: Check whether a value is empty.
+ * homepage: https://github.com/afeiship/next-is-empty
+ * version: 1.0.0
+ * date: 2021-02-06 10:01:17
+ * license: MIT
+ */
+
+(function () {
+  var global = typeof window !== 'undefined' ? window : this || Function('return this')();
+  var nx = global.nx || require('@jswork/next');
   var hasOwn = Object.prototype.hasOwnProperty;
   var toString = Object.prototype.toString;
 
-  nx.isEmpty = function(inValue) {
+  nx.isEmpty = function (inValue) {
     // Null and Undefined...
     if (inValue == null) return true;
     // Booleans...

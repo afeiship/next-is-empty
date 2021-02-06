@@ -1,37 +1,34 @@
 # next-is-empty
-> Check whether a value is empty
+> Check whether a value is empty.
 
-## install:
+[![version][version-image]][version-url]
+[![license][license-image]][license-url]
+[![size][size-image]][size-url]
+[![download][download-image]][download-url]
+
+## installation
 ```bash
-npm install -S afeiship/next-is-empty --registry=https://registry.npm.taobao.org
+npm install -S @jswork/next-is-empty
 ```
 
-## usage:
+## usage
 ```js
-var empty = require('next-is-empty');
+import '@jswork/next-is-empty';
 
-empty([]);              // true
-empty({});              // true
-empty('');              // true
-empty(0);               // true
-empty(function(){});    // true
-empty(null);            // true
-empty(undefined);       // true
-empty(new Map());       // true
-empty(new Set());       // true
-empty(new Error());     // true
-
-empty(true);            // false
-empty(false);           // false
-empty(['a', 'b']);      // false
-empty({ a: 'b' });      // false
-empty('string');        // false
-empty(42);              // false
-empty(function(a,b){}); // false
-empty(new Map([['key', 'value']])); // false
-empty(new Set([1]));    // false
-empty(new Error('fail'))// false
+//DOCS here!
 ```
 
-## resouces:
-- https://github.com/ianstormtaylor/is-empty
+## license
+Code released under [the MIT license](https://github.com/afeiship/next-is-empty/blob/master/LICENSE.txt).
+
+[version-image]: https://img.shields.io/npm/v/@jswork/next-is-empty
+[version-url]: https://npmjs.org/package/@jswork/next-is-empty
+
+[license-image]: https://img.shields.io/npm/l/@jswork/next-is-empty
+[license-url]: https://github.com/afeiship/next-is-empty/blob/master/LICENSE.txt
+
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/next-is-empty
+[size-url]: https://github.com/afeiship/next-is-empty/blob/master/dist/next-is-empty.min.js
+
+[download-image]: https://img.shields.io/npm/dm/@jswork/next-is-empty
+[download-url]: https://www.npmjs.com/package/@jswork/next-is-empty

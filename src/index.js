@@ -1,10 +1,10 @@
-(function() {
-  var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('next-js-core2');
+(function () {
+  var global = typeof window !== 'undefined' ? window : this || Function('return this')();
+  var nx = global.nx || require('@jswork/next');
   var hasOwn = Object.prototype.hasOwnProperty;
   var toString = Object.prototype.toString;
 
-  nx.isEmpty = function(inValue) {
+  nx.isEmpty = function (inValue) {
     // Null and Undefined...
     if (inValue == null) return true;
     // Booleans...
