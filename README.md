@@ -15,7 +15,9 @@ npm install -S @jswork/next-is-empty
 ```js
 import '@jswork/next-is-empty';
 
-//DOCS here!
+nx.isEmpty({})  // true
+nx.isEmpty('')  // true
+nx.isEmpty(true)  // false
 ```
 
 ## license
